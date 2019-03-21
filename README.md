@@ -431,7 +431,7 @@ Longest chain + Proof of Work = Nakamoto Consensus
 2. Easy for the sender to generate cipher text
 3. Easy for receiver to decrypt cipher text using private key
 4. Infeasible to determine private key with public key
-5. Infeasible to recover messahe M, knowing publlic key and cipher text
+5. Infeasible to recover message M, knowing public key and cipher text
 6. One of the keys is used for encryption and the other for decryption
 
 ## How to use RSA public key and private key for the encryption and decryption (?)
@@ -440,7 +440,7 @@ Longest chain + Proof of Work = Nakamoto Consensus
 
 1. The main reason why RSA is secure lies within the difficulty to find the decryption key.
 2. Person A = self, Person B = Key holder, Person C = Interceptor
-3. A third party that intercepts the message knows that n=pq, the simplest way to find n would be somehow factor n into the exact primes used by Person B in the algoritm.
+3. A third party that intercepts the message knows that n=pq, the simplest way to find n would be somehow factor n into the exact primes used by Person B in the algorithm.
 4. With larger (which are more secure) primes, this turns out to be nearly impossible to do.
 5. Now factoring n is basically impossible to do by hand.
 6. It would need large amount of computing power to factor n.
@@ -451,18 +451,16 @@ Longest chain + Proof of Work = Nakamoto Consensus
 1. Asymmetric encryption uses two keys to encrypt a plain text.
 2. Secret keys are exchanged over the Internet or a large network. It ensures that malicious persons do not misuse the keys.
 3. It is important to note that anyone with a secret key can decrypt the message and this is why asymmetrical encryption uses two related keys to boosting security.
-4. A public key is made freely avaliable to anyone who might want to send you a message.
+4. A public key is made freely available to anyone who might want to send you a message.
 5. The second private key is kept a secret so that only you can know.
-
-## How to use public/private key (and cryotographic hash function) for authentication (?)
 
 ## What is public-key infrasetructure(PKI)? (why do we need this?)
 
-The Public key infrastructure (PKI) is the set of hardware, sfotware, policies, processes and procedures required to create, manage, distribute, use, store, and revoke digital certificates and public-keys.
+The Public key infrastructure (PKI) is the set of hardware, software, policies, processes and procedures required to create, manage, distribute, use, store, and revoke digital certificates and public-keys.
 
 ## How does Ethereum provides PKI? (?)
 
-## Reliable Broadcast
+## Terminating Reliable Broadcast
 
 1. Validity: If the sender is correct and broadcasts a message m, then all correct processes eventually deliver m.
 2. Agreement: If a correct process delivers a message m, then all correct processes eventually deliver m.
@@ -488,7 +486,7 @@ Example execution where consensus algorithm for crase failure model (slide 30) f
 ## Dangerous chain
 
 1. A dangerous chain is when the last process in the chain is correct, but all others are faulty.
-2. If we have f faulty processes, a dangerous chain will have at most f+1 nodes in the chain, spans at most f rounds. It is safe to deside at the end of round f+1.
+2. If we have f faulty processes, a dangerous chain will have at most f+1 nodes in the chain, spans at most f rounds. It is safe to decide at the end of round f+1.
 
 ## Prove the minimum number of rounds to achieve consensus is when up to f processes can have crash failures
 
@@ -523,6 +521,7 @@ There is no algorithm that solves the consensus problem in fewer than f + 1 roun
 2. Message is signed and so receiver can verify the source of the message: Unforgeable signatures.
 
 
+
 ## How the algorithm in slide 86 achieves consensus in the example execution above
 (?)
 
@@ -532,7 +531,7 @@ There is no algorithm that solves the consensus problem in fewer than f + 1 roun
 
 ## Example execution where consensus algorithm on slide 86 fails to achieve consensus without msg auth
 ## Requirements to become a witness of a message (p, m, r), i.e. when to send echo
-How the algorithm in slide 94 achieves consensus in the example execution above
+## How the algorithm in slide 94 achieves consensus in the example execution above
 
 ## Impossibility results
 
@@ -554,6 +553,7 @@ It is the ability of a distrubuted computer network to remain fault tolerant wit
 # Byzantine General's Problem
 
 If there are 1/3 or greater faulty nodes, there can be no solution/consensus.
+
 
 
 # Recap
@@ -594,3 +594,46 @@ Count what protocols was faulty
 # Prove the minimal number of rounds to a...
 
 # What is public-key infrastructure
+
+# Build a Gossip Network
+
+properties:
+  Write: [Public, Consortium, Private]
+  Read: [Public, Consortium, Private]
+
+E.g: 
+  Ethereum: public write, public read
+  Passort/IO: private write, public read
+  Walmart/IBM blockchain: Consortium write & read
+  Mediledger: Consortium write, public read
+  Cosmetics/Authentication: Consortium write, public read
+
+KEY:
+Flooding
+Topology -> number of hops
+Overlay Network = connectivity, independent from physical connection, topology independent from actual internet connection
+
+Overlay Network is more stable than physical connection.
+
+# Proof of Work
+
+# Proof of Stake
+
+## Ethereum/Casper
+Users vote on the new block
+
+## Cardano/Ouroboros
+Users vote on the slot leader
+
+## Direct democracy
+Almost every node with "stakes(shares)" can vote
+
+# Stake
+vote = stake holders can vote
+leader election = stake holder can become leaders
+
+Byzantine <-> BFT
+Altruistic - vote on one branch
+Rational - vote on both <-> incentive compatible
+
+# BlockChain for marketplace
