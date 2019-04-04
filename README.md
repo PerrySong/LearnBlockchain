@@ -637,3 +637,44 @@ Altruistic - vote on one branch
 Rational - vote on both <-> incentive compatible
 
 # BlockChain for marketplace
+Decentralization = No brokerage fee
+Transparency
+Traceability
+
+Data quality assurance
+Access control: Permissioned ledger - e.g. only doctor can write. Token for data - smart contract acts as escrow.
+Privacy: Differential privacy. Secure-MPC. Homomorphic encryption.
+
+# Filecoin Backup Disk Market
+No need for consensus. Just pay for the service
+
+# KARA BY OASIS LABS
+Use Differetial Privacy to provide privacy
+Docters and patients can earn tokens for sharing data
+Researchers can submit untrained model and get trained
+
+# CORTEX LABS
+
+# COMPUTABLE
+
+# KEEP
+
+# 6 properties of digital currency
+1. Durability
+2. Privacy/Anonymity
+3. Offline Payment
+4. Divisibility
+5. Transportability
+6. Non-counterfeitability (Non-forgeability) can not fake it.
+
+# Centralized version without privacy
+Currency -> signed by bank -> store/client verify with public key of bank
+
+Serial numbers -> prevent double spending
+
+Privacy -> RSA Blind Signature process
+
+# Cut and Choose
+
+# DigiCash
+
