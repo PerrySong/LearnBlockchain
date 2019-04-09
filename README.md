@@ -678,3 +678,18 @@ Privacy -> RSA Blind Signature process
 
 # DigiCash
 
+# Eventual Consistancy vs Eventual Synchrony
+
+# Vector Clock / Causality 
+
+# Master Slave
+Only write for master
+Only read for slave
+Can not read from slave if the vector clock of a slave smaller than the client's vector clock
+
+# Uncompressed
+
+# Causal Timestamp Compression: Strawman
+To compress down to n, conflate shardstamps with same ids modulo n.
+Problem: False Dependencies
+Solution: Use system clock as the next value of shardstamp on a write. Decoples shardstamp value from number of writes on each shard.
