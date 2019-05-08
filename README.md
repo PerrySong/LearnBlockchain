@@ -683,3 +683,48 @@ Privacy -> RSA Blind Signature process
 # Rational users - Gatekeeping attack
 
 Deposit transaction
+
+# Definition of incentive compatibility
+
+Stable state
+
+Nash equilibrium
+
+# How to prove incentive compatibility
+
+1. Rational users do not have any gain from unilateral deviation
+2. The system is stable, rational users act as if they are honest users
+
+How to prove BAR-fault tolerance
+
+3. Byzantine fault tolerance + IC
+
+# Incentive in PoW-based cryptocurrency
+Block reward + Transaction fees
+Relational users at in the way that maximizes its gain
+Hedge
+
+# Selfish-mining
+if you have 51% computing power, selfish mining become profitable 
+
+# Current State
+Head of longest chain contains 100 units of transaction fees. 5 units remain
+Option 1: Extend longest chain. Claim 5 units for self, leave 0 units for next miner.
+Option 2: Fork longest chain Claim 55 units for self, leave 50 units for next miner. 
+Make the option 1 a better strategy.
+
+# The Gap Game
+
+# Minner should check whether the transaction
+
+# Consistency here means that a read request for an entity made to any of the nodes of the database should return the same data. Eventual consistency makes sure that data of each node of the database gets consistent eventually. 
+
+# Strong consistancy
+
+All accesses are seen by all parallel processes (or nodes, processors, etc.) in the same order (sequentially)
+
+# Consistency model
+Strict Consistency: operations are executed in order of wall-clock time (NTP)
+Sequential Consistency: operations are executed in some global ordering (Total Ordering)
+Causal Consistency: operations are executed in an order that reflects their causality
+Eventual Consistency: Allows stale reads but ensures that reads will eventually reflect latest written values
